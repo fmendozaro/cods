@@ -16,7 +16,6 @@ heading(){
 }
 
 set -e
-set -x
 
 # prevent installed packages (namely mysql) from trying to prompt for
 # information in an interactive way. We'll do the setup progromatically
@@ -25,6 +24,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 heading 'updating + upgrading apt'
 
+apt-mark hold cloud-init
 apt-get update
 apt-get upgrade -y
 apt-get install -y gnupg2 software-properties-common curl # we need this first to setup new repos

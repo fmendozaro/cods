@@ -1,3 +1,26 @@
+3.3.3 -- 20210301
+
+- bugfix: rename cods config file to `cods-config`
+
+3.3.2 -- 20210228
+
+- bugfix: rename cods config file to `cods-config` (see 61bd079)
+
+3.3.1 -- 20200818
+
+- bugfix: don't error out when provisioning due to `cloud-init` package
+- docs: update static site guides
+
+3.3.0 -- 20200206
+
+- bugfix: don't fail silently when creating a database that already exists
+- enhancement: update python + php sample sites dependencies
+- feature: add `cods list` subcommand
+
+3.2.2 -- 20200205
+
+- bugfix: Fix bug reading username in initial setup
+
 3.2.0 -- 20190918
 
 - Remove default-mysql-server install. This is a temporary workaround as we will
